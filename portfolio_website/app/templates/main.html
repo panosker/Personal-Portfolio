@@ -1,0 +1,264 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<header class="row bg-black">
+  <div class="col-md-4">
+    <img src="{% static 'images/portfolio.jpeg' %}" class="rounded-image" />
+  </div>
+
+  <div class="col-md-8 my-auto p-4">
+    <h1 class="letter">Hello, I'm <i>Panagiotis Keramisanos</i></h1>
+    <h3 class="titl1" style='color: aqua;'><i>Junior Backend Developer</i></h3>
+    <p class="letter">I'm a self-taught junior Python developer with a well-rounded skill set in both frontend and backend
+      development. While I have a solid foundation in frontend technologies, my true passion and expertise lie in
+      backend development,
+      particularly with Django. I love designing server-side solutions and optimizing data flows to create
+      efficient and scalable applications using Python and Django.</p>
+
+    <a class="btn btn1 btn-outline-primary s1" href="{% url 'about' %}">More About Me</a>
+
+  </div>
+</header>
+
+<br>
+<hr style="color: aqua;">
+<br>
+
+<section id="skills">
+  <div class="container p-4">
+    <h1 class="sk"><i>Skills</i></h1>
+    <br>
+    <header class="row bg-black">
+      <div class="col-md-12 p-8 ">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <h5 class="bxsk">Frameworks and Libraries:</h5>
+              <ul>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/HHCSTNNS5B2C"
+                    target="_blank">Django</a></li>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/KHSLHSMV6FB6"
+                    target="_blank">Django REST framework</a></li>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/KHSLHSMV6FB6"
+                  target="_blank">Djoser</a></li>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/KHSLHSMV6FB6"
+                  target="_blank">Bootstrap</a></li>
+              </ul>
+
+            </div>
+            <div class="col">
+              <h5 class="bxsk">Cloud Services:</h5>
+              <ul>
+                <li><a class="btn btn1"
+                    href="https://www.coursera.org/account/accomplishments/specialization/certificate/6ZHWGKX9UNWA"
+                    target="_blank">AWS - Foundamentals</a></li>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/CLEUXXSK6DLE"
+                    target="_blank">AWS - Foundamentals: Building Serverless Applications</a></li>
+
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="bxsk">Database Systems:</h5>
+              <ul>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/YB64ZXU9BN66"
+                    target="_blank">MySQL</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="bxsk">Programming Languages:</h5>
+              <ul>
+                <li><a class="btn btn1"
+                    href="https://www.coursera.org/account/accomplishments/specialization/certificate/HY64FPAYPCQT"
+                    target="_blank">Python</a></li>
+                <li><a class="btn btn1"
+                    href="https://freecodecamp.org/certification/fcc05b7e22e-f143-4bce-af07-57612878ad10/javascript-algorithms-and-data-structures"
+                    target="_blank">JavaScript</a></li>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/5MW9RCJ2DKQ4"
+                    target="_blank">HTML</a></li>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/5MW9RCJ2DKQ4"
+                    target="_blank">CSS</a></li>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/YB64ZXU9BN66"
+                    target="_blank">SQL</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <h5 class="bxsk">Version control & CI/CD Tools/Technologies: </h5>
+              <ul>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/8HXXH8FDNDKN"
+                    target="_blank">Git</a></li>
+                <li><a class="btn btn1" href="https://www.coursera.org/account/accomplishments/certificate/8HXXH8FDNDKN"
+                    target="_blank">Github</a></li>
+                <li><a class="btn btn1" href="#" target="_blank">Docker</a></li>
+                <li><a class="btn btn1" href="#" target="_blank">Kubernetes</a><small>(Basics)</small></li>
+                <li><a class="btn btn1" href="#" target="_blank">Nginx</a><small>(Basics)</small></li>
+                <li><a class="btn btn1" href="#" target="_blank">Redis</a><small>(Basics)</small></li>
+                <li><a class="btn btn1" href="#" target="_blank">TravisCI</a><small>(Basics)</small></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="bxsk">Languages: </h5>
+              <ul>
+                <li><a class="btn btn1" href="#">English</a></li>
+                <li><a class="btn btn1" href="#">Greek</a></li>
+                <li><a class="btn btn1" href="#">French</a><small>(Low Level)</small></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="bxsk">GNU/Linux and Terminal Usage:</h5>
+              <ul>
+                <li><a class="btn btn1" href="#">Command Line Navigation</a></li>
+                <li><a class="btn btn1" href="#">File and Directory Operations</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h5 class="bxsk">Proffesional skills</h5>
+              <ul>
+                <li><a class="btn btn1" href="{% url 'about' %}" target="_blank">Problem Solving</a></li>
+                <li><a class="btn btn1" href="{% url 'about' %}" target="_blank">Teamwork and Collaboration</a></li>
+                <li><a class="btn btn1" href="{% url 'about' %}" target="_blank">Communication</a></li>
+                <li><a class="btn btn1" href="{% url 'about' %}" target="_blank">Continuous Learning</a></li>
+                <li><a class="btn btn1" href="{% url 'about' %}" target="_blank">Attention to Detail</a></li>
+                <li><a class="btn btn1" href="{% url 'about' %}" target="_blank">Leadership</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </header>
+  </div>
+</section>
+<div class="container">
+  <br>
+  <hr style="color:aqua"><br>
+</div>
+
+<section id="Personal-Projects">
+  <div class="container-fluid">
+    <h1 class="sk"><i>Personal Projects</i></h1>
+    <br>
+    <small class="letter">** Personal projects are my sole creations, developed independently without external
+      involvement.</small>
+    <br>
+    <div class="scroll-container">
+      <div class="projects-container">
+        <div class="container-fluid py-2">
+          <div class="d-flex flex-row flex-nowrap">
+            {% for project in projects %}
+            <div class="card card-body c1">
+              <br>
+              <h5 class="card-title bxsk1" style="color:rgba(0, 255, 255, 0.544)">{{ project.name }}</h5>
+              <br>
+              <img src="{{ project.image_profile.url }}" class="card-img-top gif1" alt="No Gif">
+              <br>
+
+              <p class="card-text">{{ project.description }}</p>
+              <div class="btn-group btn-group-lg" role="group">
+                <a href="{{ project.giturl }}" class="btn card-link links">Source Code</a>
+                {% if project.surl %}
+                <a href="{{ project.surl }}" target="_blank" class="btn card-link links">Live</a>
+                {% endif %}
+              </div>
+
+
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<div class="container">
+  <br>
+  <hr style="color:aqua"><br>
+</div>
+
+<section id="Contributed-Projects">
+  <div class="container-fluid">
+    <h1 class="sk"><i>Contribute Projects</i></h1>
+    <br>
+    <small class="letter">** These are externally sourced projects that I've used to enhance my skills by learning from
+      them. I modify their functionality and appearance, contributing to their improvement.</small>
+    <br>
+    <div class="scroll-container">
+      <div class="projects-container">
+        <div class="container-fluid py-2">
+          <div class="d-flex flex-row flex-nowrap">
+            {% for contribproject in contribprojects %}
+            <div class="card card-body c1">
+              <br>
+              <h5 class="card-title bxsk1" style="color:rgba(0, 255, 255, 0.544)">{{ contribproject.name }}</h5>
+              <br>
+              <img src="{{ contribproject.image_profile.url }}" class="card-img-top gif1" alt="No Gif">
+              <br>
+
+              <p class="card-text">{{ contribproject.description }}</p>
+              <div class="btn-group btn-group-lg" role="group">
+
+
+                <a href="{{ contribproject.surl }}" class="btn card-link links">Source Code</a>
+
+              </div>
+
+
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <br>
+  <hr style="color:aqua"><br>
+</div>
+
+<section id="contact" class="container text-center">
+
+
+  <h1 class="sk"><i>Contact me</i></h1>
+  <br><br>
+  <div class="row">
+    <div class="col box_logos">
+
+      <a href="https://www.linkedin.com/in/panagiotis-keramisanos-86084726b/" class="bt" target="_blank"><i
+          class="fab fa-linkedin logos"></i></a>
+      <h3><i class="logos_titles">Panagiotis Keramisanos</i></h3>
+      <a href="https://github.com/panosker" target="_blank"><i class="fab fa-github logos"></i></a>
+      <h3><i class="logos_titles">panosker</i></h3>
+      <a href="mailto:panagiotiskeramisanos@gmail.com" target="_blank"><i class="fas fa-envelope logos"></a></i>
+      <h3><i class="logos_titles">panagiotiskeramisanos@gmail.com</i></h3>
+
+
+    </div>
+
+    <div class="col box_logos">
+      <form method="post" id="contactForm">
+        {% csrf_token %}
+        {{ contact_form.as_p }}
+        <button type="submit" class="btn btn-outline-primary btn_submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+</section>
+<br>
+<hr style="color:aqua"><br>
+
+
+{% endblock %}
